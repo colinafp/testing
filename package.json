@@ -2,6 +2,8 @@
   "name": "testing",
   "version": "2.0.0",
   "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": false,
   "dependencies": {
@@ -36,7 +38,8 @@
     "ngx-toastr": "10.0.4",
     "rxjs": "6.5.2",
     "tslib": "^1.9.0",
-    "zone.js": "0.10.2"
+    "zone.js": "0.10.2",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.802.2",
@@ -61,5 +64,6 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "snyk": true
 }
