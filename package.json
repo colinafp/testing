@@ -2,6 +2,8 @@
   "name": "testing",
   "version": "2.0.0",
   "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": false,
   "dependencies": {
@@ -28,7 +30,7 @@
     "bootstrap": "4.3.1",
     "core-js": "3.2.1",
     "hammerjs": "2.0.8",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lodash-es": "4.17.14",
     "moment": "2.24.0",
     "ngx-bootstrap": "5.1.1",
@@ -36,7 +38,8 @@
     "ngx-toastr": "10.0.4",
     "rxjs": "6.5.2",
     "tslib": "^1.9.0",
-    "zone.js": "0.10.2"
+    "zone.js": "0.10.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.802.2",
@@ -61,5 +64,6 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "snyk": true
 }
